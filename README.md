@@ -35,5 +35,5 @@ to become true using wait(), and other threads can notify or signal
 when that condition is met using notify() or notifyAll().
 
 ## 5. How to clone an object correctly?
-a) Implement Clonable interface
-b) Override clone() method
+- a) Implement Clonable interface
+- b) Override clone() method

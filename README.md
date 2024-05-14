@@ -37,3 +37,32 @@ when that condition is met using notify() or notifyAll().
 ## 5. How to clone an object correctly?
 - a) Implement Clonable interface
 - b) Override clone() method
+
+## 6. Why is the Finalize() method needed and how does it work?
+The finalize() method in Java is a method of the Object class used to perform
+cleanup activity before destroying any object. Garbage collector calls it
+before destroying the objects from memory. finalize method in Java is called
+by default for every object before its deletion.
+
+## 7. What is the difference between final, finally, finalize?
+Final is a keyword used in Java to restrict the modification of a variable, method,
+or class. finally is a block used in Java to ensure that a section of code is always
+executed, even if an exception is thrown. finalize is a method in Java used to perform
+cleanup processing on an object before it is garbage collected.
+
+## 8. What are try-with-resources?
+The try-with-resources statement is a try statement that declares one or more resources.
+A resource is as an object that must be closed after the program is finished with it.
+The try-with-resources statement ensures that each resource is closed at the end
+of the statement.
+
+## 9. What is the difference between the wait(1000) and sleep(1000) methods?
+The code sleep(1000); puts thread aside for exactly one second. The code wait(1000),
+causes a wait of up to one second. A thread could stop waiting earlier if it receives
+the notify() or notifyAll() call. The method wait() is defined in the class Object and
+the method sleep() is defined in the class Thread.
+
+## 10. What is the difference between i++ and ++i?
+++i will increment the value of i , and then return the incremented value. i++ will
+increment the value of i , but return the original value that i held before
+being incremented.

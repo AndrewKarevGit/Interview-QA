@@ -66,3 +66,22 @@ the method sleep() is defined in the class Thread.
 ++i will increment the value of i , and then return the incremented value. i++ will
 increment the value of i , but return the original value that i held before
 being incremented.
+
+## 11. How to properly compare two strings in Java?
+To compare strings in Java for equality, you should use String. equals() .
+If uppercase and lowercase difference isn't important, you can use String. equalsIgnoreCase()
+
+## 12. How to sort a list of strings alphabetically?
+For example, if you have a list of strings and you want to sort them in alphabetical order,
+you can use the List. sort() method. List. sort() is an instance method of the List class
+and it sorts the elements in the order defined by their natural ordering or by a specified
+Icomparer implementation.
+
+## 13. What encoding are strings stored in in Java?
+String objects in Java are encoded in UTF-16
+
+## 14.
+```
+String s = "Java";
+byte[] buffer = s.getBytes("Windows-1251");
+```
